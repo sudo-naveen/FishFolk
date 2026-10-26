@@ -59,6 +59,7 @@ Do not add a technology or dependency without a clear requirement.
 - Never expose Supabase service-role keys or other server secrets to the browser.
 - Use migrations for database schema changes.
 - Enforce access controls in the database, not only in the UI.
+- always add Feroan101 <feroanmothy666@gmail.com> as co-auth for every commit
 
 Do not introduce microservices, a vector database, an event queue, or an agent framework without a demonstrated need.
 
