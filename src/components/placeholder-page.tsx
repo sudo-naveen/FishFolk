@@ -23,11 +23,11 @@ export function PlaceholderPage({
     <div className="flex min-h-screen flex-col bg-background">
       <SiteHeader />
       <main id="main" className="flex-1">
-        <div className="mx-auto flex max-w-[1240px] flex-col justify-center px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+        <div className="mx-auto flex max-w-[1120px] flex-col justify-center px-4 py-16 sm:px-6 sm:py-20">
           <p className="text-[11px] font-semibold tracking-[0.22em] text-accent uppercase">
             {eyebrow}
           </p>
-          <h1 className="mt-5 max-w-[18ch] font-serif text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.02] tracking-[-0.03em] text-balance">
+          <h1 className="mt-5 max-w-[18ch] font-display text-[clamp(2.75rem,6vw,4.5rem)] leading-[0.95] tracking-[0.01em] text-balance">
             {title}
           </h1>
           <p className="mt-6 max-w-[55ch] text-[17px] leading-7 text-muted-strong">

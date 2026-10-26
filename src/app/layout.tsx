@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Instrument_Sans } from "next/font/google";
+import { Bebas_Neue, DM_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
-const instrumentSans = Instrument_Sans({
-  variable: "--font-instrument-sans",
+const bebasNeue = Bebas_Neue({
+  variable: "--font-bebas",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
   display: "swap",
 });
@@ -20,14 +28,14 @@ export const metadata: Metadata = {
     template: "%s | FishFolk",
   },
   description:
-    "FishFolk is a voice-first community knowledge platform for fishing communities to preserve local wisdom, share observations, and learn from one another.",
+    "Preserve local wisdom, share observations, and learn from the experiences of fishing communities.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${instrumentSans.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${bebasNeue.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
