@@ -1,4 +1,4 @@
-o# FishFolk
+# FishFolk
 
 <p align="center">
   <strong>Community knowledge, carried by every voice.</strong>
